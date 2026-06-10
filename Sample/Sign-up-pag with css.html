@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up-pag with css</title>
+    <style>
+        body{
+            background-color: #f4f4f4;
+            font-family: a , 'Times New Roman', Times, serif ;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            font-size: 18px;
+            
+        }
+      h1{
+        justify-self: center;
+        color: #333;
+      }
+        
+        button[type="submit" ] {
+            background-color: green;
+            color: white;
+            border: none;
+            padding: 10px 40px ;
+            transition: background-color 0.3s ease ;
+        }
+        button[type='button'] {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 10px 40px;
+            transition: background-color 0.3s ease ;
+            margin-left: 15px;
+            
+
+        }
+        button[type="submit" ]:hover{
+            background-color: darkgreen;
+            cursor: pointer;
+        }
+        button[type='button']:hover{
+            background-color: darkred;
+            cursor: pointer;
+        }
+        input[type='text']:focus,
+        input[type='email']:focus,
+        input[type='Password']:focus{
+             background-color: lightyellow;
+            border: 2px solid black; 
+            border-radius: 2px;
+            outline: none;
+
+
+        }
+        input[type='text'],
+        input[type='email'],
+        input[type='Password']{
+            transition: background-color 0.3s ease,
+            border-color 0.3s ease;
+        }
+        input[type='text'],
+        input[type='email'],
+        input[type='Password']{
+            padding: 5px;
+            margin: 2px;
+            border: 1px solid black;
+        }
+        .for-container{
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgb(from 0, 0, 0, 0.1) ;     
+            justify-self: center;
+            width: 90%;
+            max-width: 360px;
+        }
+     
+
+        
+    </style>
+</head>
+<body>
+   
+    <hr>
+    <form class="for-container" method="post">
+        <h1>Sign-in</h1>
+
+        <label  for="name" >Name:</label>
+        <input placeholder="Alazar ginbaru" type="text" id="name" required > <br> <br>
+       
+        <label for="email" >Email:</label> 
+        <input  placeholder="alazarginbaru1@gmail.com"  type="email" id="email" required > <br> <br>
+        <label for="Password" >Password:</label>
+        <input type="Password"  id="Password" required minlength="8"  > <br> <br>
+        <label for="Country"  >Country</label> 
+        <select>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+            <option value="uc">Canada</option>
+
+        </select> <br> <br>
+        <input type="checkbox" id="remember" >
+        <label for="remember"  >remember</label> <br> <br>
+   
+         <div><button type="submit" >Submit</button>
+            <button type="button" >Cancel</button> 
+        </div>
+        <br>
+
+    </form>
+</body>
+</html>
