@@ -1,91 +1,69 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-    content="width=device-width, 
-    initial-scale=1.0">
-    <title>My portofolio</title>
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-   <link rel="stylesheet" href="style.css">
-   
-   
-   
-</head>
-<body>
-    
-        <nav>
-            <ul >
-                <li class="navlu"><a href="./Portfolio.html">Home</a>   </li>
-                <li class="navlu"> <a href="./aboutme.html">About me</a>   </li>
-                <li class="navlu"><a href="./Skill.html">Skills</a>  </li>
-                <li class="navlu"> <a href="./Contactme.html">Contact me  </a> </li>
-            </ul>
-        </nav>
-    <h1 class="my" >My portfolio </h1>
-    <hr>
-   <div class="container" >
+<nav>
+    <div class="logo">Alazar.G</div>
+    <input type="checkbox" id="click">
+    <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </label>
+    <ul>
+        <li class="navlu"><a class="active" href="./index.html">Home</a></li>
+        <li class="navlu"><a href="./aboutme.html">About me</a></li>
+        <li class="navlu"><a href="./Skill.html">Skills</a></li>
+        <li class="navlu"><a href="./Contactme.html">Contact me</a></li>
+    </ul>
+</nav>
 
-     <img class="img1" src="./Profile.png" alt="Profile" width="120px" height="120px">
-     </div>  <br> <br>
-     <div>
-        <h2>Name: Alazar Ginbaru</h2>
-   
-    <p >Phone No: 0939687239</p> 
-<div class="social-links-container">
-    <h3>Connect with Me</h3>
-    <div class="social-icons">
-        <!-- GitHub Link -->
-        <a href="https://github.com/alazar1-cyber" target="_blank" title="GitHub">
-            <i class="fab fa-github"></i>
-        </a>
-        
-        <!-- LinkedIn Link -->
-        <a href="https://www.linkedin.com/in/alazar-ginbaru-308359363" target="_blank" title="LinkedIn">
-            <i class="fab fa-linkedin"></i>
-        </a>
-        
-        <!-- Telegram Link -->
-        <a href="https://t.me/alazar4j" target="_blank" title="Telegram">
-            <i class="fab fa-telegram"></i>
-        </a>
+<main class="page-content">
+    <h1 class="my">My Portfolio</h1>
+    <hr class="section-divider">
+    
+    <div class="container">
+        <div class="profile-image-wrapper">
+            <img class="img1" src="./Profile.png" alt="Profile">
+        </div>
+        <div class="profile-details">
+            <h2>Name: Alazar Ginbaru</h2>
+            <p class="phone-num">Phone No: 0939687239</p> 
+            
+            <div class="social-links-container">
+                <h3>Connect with Me</h3>
+                <div class="social-icons">
+                    <!-- GitHub Link -->
+                    <a href="https://github.com/alazar1-cyber" target="_blank" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <!-- LinkedIn Link -->
+                    <a href="https://www.linkedin.com/in/alazar-ginbaru-308359363" target="_blank" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <!-- Telegram Link -->
+                    <a href="https://t.me/alazar4j" target="_blank" title="Telegram">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
-     </div>
-     <hr>
-  
-    <br> <br> <br> <br>
     
-
-
-<div class="pic" > 
-    <button class="p"  type="button" title="about me"> 
-       
-        <a target="_blank" href="./aboutme.html">
-        <img 
-         src="./About me.jpg"   alt="About me" ><br>
-         <label for="">About me</label></a> 
-         
+    <hr class="section-divider">
+    
+    <div class="pic"> 
+        <button class="p" type="button" title="About me"> 
+            <a href="./aboutme.html">
+                <img src="./About me.jpg" alt="About me"><br>
+                <span class="btn-label">About me</span>
+            </a> 
         </button>
-   <button class="p" type="button" title="Skills" >
-        <a target="_blank" href="./Skill.html">
-        <img       
-        src="./Skill.jpg" alt="Skills"> <br>
-        <label for="">Skills</label></a>
-       
-   </button>
-   <button class="p" type="button" title="Contact me">
-        <a target="_blank" href="./Contactme.html">
-        <img 
-        src="./Contact me.jpg" alt="Contact as"><br>
-        <label for="">Contact me</label></a> 
-        
-   </button>
-    
+        <button class="p" type="button" title="Skills">
+            <a href="./Skill.html">
+                <img src="./Skill.jpg" alt="Skills"><br>
+                <span class="btn-label">Skills</span>
+            </a>
+        </button>
+        <button class="p" type="button" title="Contact me">
+            <a href="./Contactme.html">
+                <img src="./Contact me.jpg" alt="Contact me"><br>
+                <span class="btn-label">Contact me</span>
+            </a> 
+        </button>
     </div>
-
-
-
-
-</body>
-</html>
+</main>
