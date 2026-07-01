@@ -1,134 +1,67 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-     content="width=device-width, 
-     initial-scale=1.0">
-    <title>Contact me</title>
-    <link rel="stylesheet" href="style.css">
-   
+<nav>
+    <div class="logo">Alazar.G</div>
+    <input type="checkbox" id="click">
+    <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </label>
+    <ul>
+        <li class="navlu"><a href="./index.html">Home</a></li>
+        <li class="navlu"><a href="./aboutme.html">About me</a></li>
+        <li class="navlu"><a href="./Skill.html">Skills</a></li>
+        <li class="navlu"><a class="active" href="./Contactme.html">Contact me</a></li>
+    </ul>
+</nav>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <style>
-         button[type="submit" ] {
-            background-color: green;
-            color: white;
-            border: none;
-            padding: 10px 40px ;
-            transition: background-color 0.3s ease ;
-        }
-        button[type='button'] {
-            background-color: red;
-            color: white;
-            border: none;
-            padding: 10px 40px;
-            transition: background-color 0.3s ease ;
-            margin-left: 15px;
-            
-
-        }
-        button[type="submit" ]:hover{
-            background-color: darkgreen;
-            cursor: pointer;
-        }
-        button[type='button']:hover{
-            background-color: darkred;
-            cursor: pointer;
-        }
-        input[type='text']:focus,
-        input[type='email']:focus,
-        input[type='Password']:focus{
-             background-color: lightyellow;
-            border: 2px solid black; 
-            border-radius: 2px;
-            outline: none;
-
-
-        }
-        input[type='text'],
-        input[type='email'],
-        input[type='Password']{
-            transition: background-color 0.3s ease,
-            border-color 0.3s ease;
-        }
-        input[type='text'],
-        input[type='email'],
-        input[type='Password']{
-            padding: 5px;
-            margin: 2px;
-            border: 1px solid black;
-        }
-        .for-container{
-            
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgb(from 0, 0, 0, 0.1) ;     
-            width: 90%;
-            max-width: 360px;
-        }
-    </style>
-</head>
-<body>
-    <nav>
-        <ul >
-            <li class="navlu"><a href="./Portfolio.html">Home</a>   </li>
-            <li class="navlu"> <a href="./aboutme.html">About me</a>   </li>
-            <li class="navlu"><a href="./Skill.html">Skills</a>  </li>
-            <li class="navlu"> <a href="./Contactme.html">Contact me  </a> </li>
-        </ul>
-    </nav>
+<main class="page-content">
     <h1>Contact me</h1>
-    <div class="form">
-        <form class="for-container" method="post">
-          
     
-            <label  for="name" >Name:</label>
-            <input placeholder="Alazar ginbaru" type="text" id="name" required > <br> <br>
-           
-            <label for="email" >Email:</label> 
-            <input  placeholder="alazarginbaru1@gmail.com"  type="email" id="email" required > <br> <br>
-            <label for="Missage">Missage:</label> <br>
-            <textarea name="" id="" cols="40" rows="10"></textarea> <br>
-            <label for="Country"  >Country</label> 
-            <select>
+    <div class="form-wrapper">
+        <form class="for-container" method="post" action="#">
+            
+            <label for="name">Name:</label>
+            <input placeholder="Alazar Ginbaru" type="text" id="name" required>
+            
+            <label for="email">Email:</label> 
+            <input placeholder="alazarginbaru1@gmail.com" type="email" id="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" rows="6" placeholder="Write your message here..." required></textarea>
+            
+            <label for="Country">Country</label> 
+            <select id="Country">
+                <option value="ethiopia">Ethiopia</option>
                 <option value="usa">USA</option>
                 <option value="uk">UK</option>
-                <option value="uc">Canada</option>
-    
-            </select> <br> <br>
-            <input type="checkbox" id="remember" >
-            <label for="remember"  >remember</label> <br> <br>
-       
-             <div><button type="submit" >Submit</button>
-                <button type="button" >Cancel</button> 
+                <option value="canada">Canada</option>
+            </select>
+            
+            <div class="form-row">
+                <input type="checkbox" id="remember">
+                <label for="remember">Remember me</label>
             </div>
-            <br>
-    
+       
+            <div class="form-buttons">
+                <button type="submit">Submit</button>
+                <button type="button">Cancel</button> 
+            </div>
         </form>
-    <!-- Social Media Icons -->
-
-
-<div class="social-links-container">
-    <h3>Connect with Me</h3>
-    <div class="social-icons">
-        <!-- GitHub Link -->
-        <a href="https://github.com/alazar1-cyber" target="_blank" title="GitHub">
-            <i class="fab fa-github"></i>
-        </a>
-        
-        <!-- LinkedIn Link -->
-        <a href="https://www.linkedin.com/in/alazar-ginbaru-308359363" target="_blank" title="LinkedIn">
-            <i class="fab fa-linkedin"></i>
-        </a>
-        
-        <!-- Telegram Link -->
-        <a href="https://t.me/alazar4j" target="_blank" title="Telegram">
-            <i class="fab fa-telegram"></i>
-        </a>
     </div>
-</div>
 
-    
-</body>
-</html>
+    <div class="social-links-container contact-socials">
+        <h3>Connect with Me</h3>
+        <div class="social-icons">
+            <!-- GitHub Link -->
+            <a href="https://github.com/alazar1-cyber" target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <!-- LinkedIn Link -->
+            <a href="https://www.linkedin.com/in/alazar-ginbaru-308359363" target="_blank" title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <!-- Telegram Link -->
+            <a href="https://t.me/alazar4j" target="_blank" title="Telegram">
+                <i class="fab fa-telegram"></i>
+            </a>
+        </div>
+    </div>
+</main>
