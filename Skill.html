@@ -1,65 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" 
-    content="width=device-width,
-     initial-scale=1.0">
-    <title>Skills</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <nav>
-        <ul >
-            <li class="navlu"><a href="./Portfolio.html">Home</a>   </li>
-            <li class="navlu"> <a href="./aboutme.html">About me</a>   </li>
-            <li class="navlu"><a href="./Skill.html">Skills</a>  </li>
-            <li class="navlu"> <a href="./Contactme.html">Contact me  </a> </li>
-        </ul>
-    </nav>
+<nav>
+    <div class="logo">Alazar.G</div>
+    <input type="checkbox" id="click">
+    <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </label>
+    <ul>
+        <li class="navlu"><a href="./index.html">Home</a></li>
+        <li class="navlu"><a href="./aboutme.html">About me</a></li>
+        <li class="navlu"><a class="active" href="./Skill.html">Skills</a></li>
+        <li class="navlu"><a href="./Contactme.html">Contact me</a></li>
+    </ul>
+</nav>
+
+<main class="page-content">
     <h1>Skills</h1>
-    <h3>
-        <ul
-        margin-right: 600px; 
-        padding: 20px; 
-        size: 220px; >
-       <li>HTML</li>
-       <li>CSS</li>
-       <li>Java</li>
-   </ul>
-    </h3>
+    
+    <div class="skills-list-wrapper">
+        <ul class="skills-bullet-list">
+            <li><i class="fab fa-html5"></i> HTML</li>
+            <li><i class="fab fa-css3-alt"></i> CSS</li>
+            <li><i class="fab fa-java"></i> Java</li>
+        </ul>
+    </div>
    
-<h2> My sample works </h1>
-<div class="sp">
-<div>
-    <button  class="spi" type="button">
-        <a target="_blank" href="./Sample/Sign-up-page.html">
-            <img src="./Sample/HTML sample.png" alt=""><br>
-             <h3>HTML</h3>
-        </a>
-      
-    </button>   
-</div><br>
-<div>
-    <button class="spi" type="button">
-        <a target="_blank" href="./Sample/Sign-up-pag with css.html">
-            <img src="./Sample/HTML with CSS sample.png " alt=""><br>
-             <h3>HTML with CSS</h3>
-        </a>
-      
-    </button>
-
-</div>
-<button  class="spi" type="button">
-    <a target="_blank" href="./Sample/java.png">
-        <img src="./Sample/java.png" alt=""><br>
-         <h3>Java</h3>
-    </a>
-            
-</button>
-
-
-</div>
-
-</body>
-</html>
+    <h2>My Sample Works</h2>
+    
+    <div class="sp">
+        <div class="sample-item">
+            <button class="spi" type="button">
+                <a target="_blank" href="./Sample/Sign-up-page.html">
+                    <img src="./Sample/HTML sample.png" alt="HTML Sample"><br>
+                    <h3>HTML</h3>
+                </a>
+            </button>   
+        </div>
+        
+        <div class="sample-item">
+            <button class="spi" type="button">
+                <a target="_blank" href="./Sample/Sign-up-pag with css.html">
+                    <img src="./Sample/HTML with CSS sample.png" alt="HTML CSS Sample"><br>
+                    <h3>HTML with CSS</h3>
+                </a>
+            </button>
+        </div>
+        
+        <div class="sample-item">
+            <button class="spi" type="button">
+                <a target="_blank" href="./Sample/java.png">
+                    <img src="./Sample/java.png" alt="Java Sample"><br>
+                    <h3>Java</h3>
+                </a>
+            </button>
+        </div>
+    </div>
+</main>
